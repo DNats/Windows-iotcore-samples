@@ -1,7 +1,9 @@
 # SPI Accelerometer
 
-We'll connect an SPI accelerometer to your Raspberry Pi 2 or 3, MinnowBoard Max, or DragonBoard 410c and create a simple app to read data from it. We'll walk you through step-by-step, so no background knowledge of SPI is needed.
-However, if you're curious, SparkFun provides a great [tutorial on SPI](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi){:target="_blank"}.
+We'll connect an SPI accelerometer to your Raspberry Pi 2 or 3, Up Squared*, or DragonBoard 410c and create a simple app to read data from it. We'll walk you through step-by-step, so no background knowledge of SPI is needed.
+However, if you're curious, SparkFun provides a great [tutorial on SPI](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi).
+
+*The Up Squared should be used in place of the Minnowboard Max. We are in the process of updating our documentation to reflect this change.   
 
 This is a headed sample.  To better understand what headed mode is and how to configure your device to be headed, follow the instructions [here](/Docs/HeadlessMode).
 
@@ -13,7 +15,7 @@ You can find the source code for this sample by downloading a zip of all of our 
 
 You'll need a few components:
 
-* <a name="SPI_Accelerometer"></a>an [ADXL345 accelerometer board from Sparkfun](https://www.sparkfun.com/products/9836){:target="_blank"} with pin headers soldered on
+* <a name="SPI_Accelerometer"></a>an [ADXL345 accelerometer board from Sparkfun](https://www.sparkfun.com/products/9836) with pin headers soldered on
 
 * a breadboard and a couple of male-to-female connector wires
 
@@ -23,7 +25,7 @@ Visit the **Raspberry Pi 2 or 3/MinnowBoard Max** sections below depending on wh
 
 #### Raspberry Pi 2 or 3
 If you have a Raspberry Pi 2 or 3, we need to hook up power, ground, and the SPI lines to the accelerometer.
- See the [Raspberry Pi 2 and 3 pin mapping page](/Samples/PinMappingsRPi2) for more details on the RPi2 and RPi3 IO pins.
+ See the [Raspberry Pi 2 and 3 pin mapping page](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi) for more details on the RPi2 and RPi3 IO pins.
 
 **Note: Make sure to power off the RPi2 or RPi3 when connecting your circuit. This is good practice to reduce the chance of an accidental short circuit during construction.**
 
@@ -50,7 +52,7 @@ Here are the schematics:
 
 #### MinnowBoard Max
 If you have a MinnowBoard Max, we need to hook up power, ground, and the SPI lines to the accelerometer.
- See the [MBM pin mapping page](/Samples/PinMappingsMBM) for more details on the MBM IO pins.
+ See the [MBM pin mapping page](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsmbm) for more details on the MBM IO pins.
 
 **Note: Make sure to power off the MBM when connecting your circuit. This is good practice to reduce the chance of an accidental short circuit during construction.**
 
@@ -123,7 +125,7 @@ public sealed partial class MainPage : Page
 }
 ```  
 
-Follow the instructions to [setup remote debugging and deploy the app](/Docs/AppDeployment.htm#csharp). The SPIAccelerometer app will deploy and start, and you should see accelerometer data show up on screen.
+Follow the instructions to [setup remote debugging and deploy the app](https://docs.microsoft.com/en-us/windows/iot-core/develop-your-app/appdeployment). The SPIAccelerometer app will deploy and start, and you should see accelerometer data show up on screen.
  If you have your accelerometer flat on a surface, the Z axis should read close to 1.000G, while X and Y are close to 0.000G. The values will fluctuate a little even if the device is standing still.
  This is normal and is due to minute vibrations and electrical noise. If you tilt or shake the sensor, you should see the values change in response. Note that this sample configures the device in 4G mode,
 so you wont be able to see G readings higher than 4Gs.

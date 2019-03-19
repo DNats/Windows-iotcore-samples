@@ -1,6 +1,12 @@
 ---
-title: Weather Station sample
-ms.author: brian.fjeldstad
+topic: sample
+urlFragment: weather-station
+languages:
+-cpp
+-csharp
+-vb
+products:
+-windows
 description: Communicate with an I2C/SPI based temperature and pressure sensor.
 ---
 
@@ -9,7 +15,7 @@ description: Communicate with an I2C/SPI based temperature and pressure sensor.
 These are the available versions of this Windows 10 IoT Core sample:
 
 *	[C#](./CS/README.md)
-*	[C++](./Cpp/README.md)
+*	[C++](./CPP/README.md)
 *	[VB](./VB/README.md)
 
 ## Additional resources

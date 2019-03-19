@@ -2,7 +2,7 @@
 
 We'll create a simple app that allows communication between a desktop and an IoT device over a serial interface.
 
-This is a headed sample.  To better understand what headed mode is and how to configure your device to be headed, follow the instructions [here](/Docs/HeadlessMode){:target="_blank"}.
+This is a headed sample.  To better understand what headed mode is and how to configure your device to be headed, follow the instructions [here](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/headlessmode).
 
 ### Load the project in Visual Studio
 
@@ -15,11 +15,11 @@ This app is a Universal Windows app and will run on both the PC and your IoT dev
 You have two options for wiring up your board:
 
 1. using the On-board UART controller
-2. using a USB-to-TTL adapter cable such as [this one](http://www.adafruit.com/products/954){:target="_blank"}
+2. using a USB-to-TTL adapter cable such as [this one](http://www.adafruit.com/products/954).
 
 #### <a name="MBM_UART"></a>On-board UART (MinnowBoard Max)
 
-The MinnowBoard Max has two on-board UARTs. See the [MBM pin mapping page](/Samples/PinMappingsMBM) for more details on the MBM GPIO pins. 
+The MinnowBoard Max has two on-board UARTs. See the [MBM pin mapping page](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsmbm) for more details on the MBM GPIO pins. 
 
 * UART1 uses GPIO pins 6, 8, 10, and 12. 
 * UART2 uses GPIO pins 17 and 19. 
@@ -39,7 +39,7 @@ Make the following connections:
 
 #### <a name="RPi2_UART"></a>On-board UART (Rasperry Pi2)
 
-The Rasperry Pi 2 or 3 has one on-board UART. See the [Raspberry Pi 2 Pin Mappings page](/Samples/PinMappingsRPi2) for more details on the GPIO pins. 
+The Rasperry Pi 2 or 3 has one on-board UART. See the [Raspberry Pi 2 and 3 Pin Mappings page](https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/pinmappings/pinmappingsrpi) for more details on the GPIO pins. 
 
 * UART0 uses GPIO pins 6 (GND), 8 (TX) and 10 (RX). 
 
@@ -76,9 +76,9 @@ _NOTE: Leave the power wire of the USB-to-TTL cable unconnected._
 
 You will need:
 
-* 1 X USB-to-TTL module (This is what we will connect to our RPi2 or RPi3 or MBM device. We used [this Silicon Labs CP2102 based USB-to-TTL module](http://www.amazon.com/gp/product/B00LODGRV8){:target="_blank"})
+* 1 X USB-to-TTL module (This is what we will connect to our RPi2 or RPi3 or MBM device. We used [this Silicon Labs CP2102 based USB-to-TTL module](http://www.amazon.com/gp/product/B00LODGRV8))
 
-* 1 X USB-to-TTL cable (This will connect to our PC. We used [this one](http://www.adafruit.com/products/954){:target="_blank"})
+* 1 X USB-to-TTL cable (This will connect to our PC. We used [this one](http://www.adafruit.com/products/954))
 
 Make the following connections:
 
@@ -100,7 +100,7 @@ Below is an image of our USB-to-TTL module connected to a USB port in our RPi2 o
 
 ### Deploy and Launch the SerialSample App
 
-Now that our PC and RPi2, RPi3 or MBM are connected, let's setup and deploy the app. If you are not familiar with how to set the target device and target architecture in Visual Studio see [this section](/Samples/HelloWorld.htm#deploy-the-app-to-your-windows-iot-core-device) for details.
+Now that our PC and RPi2, RPi3 or MBM are connected, let's setup and deploy the app. If you are not familiar with how to set the target device and target architecture in Visual Studio see [this section](https://github.com/Microsoft/Windows-iotcore-samples/tree/master/Samples/HelloWorld/CS#deploy-the-app-to-your-windows-iot-core-device) for details.
 
 You can find the source code for this sample by downloading a zip of all of our samples [here](https://github.com/Microsoft/Windows-iotcore-samples/archive/master.zip).
 
@@ -114,7 +114,7 @@ You can find the source code for this sample by downloading a zip of all of our 
 
 5. Open the PC copy of the SerialSample app in VS Instance B.
 
-6. In VS Instance A, [configure the app for deployment to your RPi2 or RPi3 or MBM device](/Samples/HelloWorld.htm#deploy-the-app-to-your-windows-iot-core-device))
+6. In VS Instance A, [configure the app for deployment to your RPi2 or RPi3 or MBM device](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/HelloWorld/CS#deploy-the-app-to-your-windows-iot-core-device)
 	
 	*For RPi2 or RPi3, set the target device to 'Remote Machine' and target architecture to 'ARM'
 	
@@ -179,7 +179,7 @@ The device that is receiving the message will automatically display the text in 
 
 ### Let's look at the code
 
-The code for this sample uses the [Windows.Devices.SerialCommunication](https://msdn.microsoft.com/en-us/library/windows.devices.serialcommunication.aspx){:target="_blank"} namespace. 
+The code for this sample uses the [Windows.Devices.SerialCommunication](https://msdn.microsoft.com/en-us/library/windows.devices.serialcommunication.aspx) namespace. 
 
 The SerialDevice class will be used to enumerate, connect, read, and write to the serial devices connected to the device. 
 

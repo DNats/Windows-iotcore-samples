@@ -1,10 +1,14 @@
 ---
-title: Serial UART Sample sample
-ms.author: lamadio
+topic: sample
+urlFragment: serial-uart
+languages: 
+- csharp
+products:
+- windows
 description: Communicate between a desktop and an IoT device over a serial interface.
 ---
 
-# Serial Sample
+# Serial UART Sample
 
 These are the available versions of this Windows 10 IoT Core sample:
 

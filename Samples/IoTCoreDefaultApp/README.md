@@ -1,7 +1,11 @@
 ---
-title: IoT Core Default App sample
-ms.author: namkedia
-description: A full featured sample app - The current IoT Core default application.
+topic: sample
+urlFragment: iotcore-defaultapp
+languages: 
+  - csharp
+products:
+  - windows
+description: The current IoT Core Default App, a fully featured sample app.
 ---
 
 # IoT Core Default App
@@ -9,7 +13,6 @@ description: A full featured sample app - The current IoT Core default applicati
 These are the available versions of this Windows 10 IoT Core sample:
 
 *	[C#](./CS/README.md)
-*	[C++](./Cpp/README.md)
 
 ## Additional resources
 * [Windows 10 IoT Core home page](https://developer.microsoft.com/en-us/windows/iot/)
